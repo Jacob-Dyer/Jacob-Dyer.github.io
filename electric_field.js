@@ -112,7 +112,7 @@ class Particle {
     strokeWeight(4);
 
 
-    if (this.charge < 0) {
+    if (this.charge > 0) {
       
       stroke(198, 74, 75);
       // Different fill based on state
@@ -214,7 +214,7 @@ function setup() {
   createP('- ArrowUp: Add a random particle');
   createP('- ArrowDown: Remove the last particle');
   createP('</br>');
-  createP('Adapted from: https://github.com/isaacvr/coding/tree/gh-pages/electric_field');
+  createP('Adapted from: https://isaacvr.github.io/coding/electric_field/');
 
   for (let i = 0; i <= TOTAL; ++i) {
     system.push( new Particle(RAD) );
